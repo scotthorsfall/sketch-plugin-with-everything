@@ -1,0 +1,19 @@
+# build artifacts
+builds/
+*.sketchplugin
+*.zip
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# mac
+.DS_Store
+
+# Editors
+.idea
+.vscode
+
+# sketch
+# sketch-assets

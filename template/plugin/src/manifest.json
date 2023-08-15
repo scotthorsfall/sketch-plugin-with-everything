@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Simple Command",
+      "identifier": "sample-template.simple-plugin",
+      "script": "./my-command.js"
+    },
+    {
+      "name": "Action Command (OpenDocument)",
+      "identifier": "sample-template.action-plugin",
+      "script": "./my-command.js",
+      "handlers": {
+        "actions": {
+          "OpenDocument": "onOpenDocument"
+        }
+      }
+    },
+    {
+      "name": "Webview Command",
+      "identifier": "sample-webview.webview-plugin",
+      "script": "./webview-command.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Sketch Template Plugin",
+    "items": [
+      "sample-template.simple-plugin",
+      "-",
+      "sample-template.action-plugin",
+      "-",
+      "sample-webview.webview-plugin"
+    ]
+  }
+}

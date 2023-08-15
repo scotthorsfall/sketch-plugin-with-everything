@@ -1,0 +1,36 @@
+{
+  "name": "sample-template",
+  "description": "",
+  "version": "0.1",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "sample-template",
+    "manifest": "plugin/src/manifest.json",
+    "main": "sample-template.sketchplugin",
+    "assets": [
+      "plugin/assets/**/*"
+    ],
+    "sketch-assets-file": "plugin/sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.8.0",
+    "@skpm/extract-loader": "^2.0.2",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5"
+  },
+  "resources": [
+    "ui/**/*.js"
+  ],
+  "dependencies": {
+    "sketch-module-web-view": "^3.1.4"
+  },
+  "author": "Scott Horsfall <scotthorsfall@apple.com>"
+}
