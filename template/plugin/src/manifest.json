@@ -4,12 +4,12 @@
   "commands": [
     {
       "name": "Simple Command",
-      "identifier": "sample-template.simple-plugin",
+      "identifier": "{{ slug }}.simple-plugin",
       "script": "./my-command.js"
     },
     {
       "name": "Action Command (OpenDocument)",
-      "identifier": "sample-template.action-plugin",
+      "identifier": "{{ slug }}.action-plugin",
       "script": "./my-command.js",
       "handlers": {
         "actions": {
@@ -19,7 +19,7 @@
     },
     {
       "name": "Webview Command",
-      "identifier": "sample-webview.webview-plugin",
+      "identifier": "{{ slug }}.webview-plugin",
       "script": "./webview-command.js",
       "handlers": {
         "run": "onRun",
@@ -30,13 +30,13 @@
     }
   ],
   "menu": {
-    "title": "Sketch Template Plugin",
+    "title": "{{ name }}",
     "items": [
-      "sample-template.simple-plugin",
+      "{{ slug }}.simple-plugin",
       "-",
-      "sample-template.action-plugin",
+      "{{ slug }}.action-plugin",
       "-",
-      "sample-webview.webview-plugin"
+      "{{ slug }}.webview-plugin"
     ]
   }
 }

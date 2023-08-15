@@ -1,4 +1,4 @@
-# SKPM Template
+# {{ name }}
 
 A template of templates. This template combines the [skpm](), [with-webview](), and [with-actions]() templates from the [skpm]() directory.
 
@@ -6,9 +6,9 @@ I've made it specifically for myself, if you're not me, you'll need to replace i
 
 ## Installation
 
-- [Download](../../releases/latest/download/sample-template.sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/latest/download/{{ slug }}.sketchplugin.zip) the latest release of the plugin
 - Un-zip
-- Double-click on sample-template.sketchplugin
+- Double-click on {{ slug }}.sketchplugin
 
 ## Development
 
