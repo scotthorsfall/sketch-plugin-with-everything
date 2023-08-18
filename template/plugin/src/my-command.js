@@ -1,4 +1,7 @@
 import sketch from 'sketch'
+
+import * as utils from './utils/sketch.js'
+
 // documentation: https://developer.sketchapp.com/reference/api/
 
 export default function() {

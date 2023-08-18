@@ -1,6 +1,6 @@
+import UI from 'sketch/ui'
 import BrowserWindow from 'sketch-module-web-view'
 import { getWebview } from 'sketch-module-web-view/remote'
-import UI from 'sketch/ui'
 
 const webviewIdentifier = 'sample-webview.webview'
 

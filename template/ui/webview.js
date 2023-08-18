@@ -12,3 +12,16 @@ document.getElementById('button').addEventListener('click', () => {
 window.setRandomNumber = (randomNumber) => {
   document.getElementById('answer').innerHTML = 'Random number from the plugin: ' + randomNumber
 }
+
+// sample function for messagingSystem in utils/sketch.js
+window.updateButtonText = (buttonID, message) => {
+
+  //document.getElementById('answer').innerHTML = 'ButtonID to run: ' + buttonID + ", with message: " + message
+
+  var originalText = document.getElementById(buttonID).textContent
+
+  document.getElementById(buttonID).textContent = message
+
+  setTimeout(function() { resetText(buttonID, originalText); }, 1500);
+  function resetText(button, originalText){ document.getElementById(button).textContent = originalText; }
+}
